@@ -1,3 +1,4 @@
+// node 4.process.js 1 0
 const [by, what, firstArg, secondArg] = process.argv;
 
 console.log("Started by ", by);

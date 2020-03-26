@@ -1,3 +1,4 @@
+// node 2.events-and-http.js
 const http = require("http");
 
 const portA = 3000;
@@ -6,11 +7,11 @@ let counter = 0;
 
 const handlerA = (request, response) => {
   counter += 1;
-  response.end("Page visited " + counter + " times!");
+  response.end("This page was visited " + counter + " times!");
 };
 
 const handlerB = (request, response) => {
-  response.end("You are not supposed to be here.");
+  response.end("You are not suppose to be here.");
   throw "Not Implemented";
 };
 
